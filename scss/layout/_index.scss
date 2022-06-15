@@ -1,0 +1,33 @@
+/*Estilos Inicio*/
+
+main{
+    .banner{
+        width: 100%;
+        min-height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(
+            0deg,rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+            url(../img/imagendeinicio.jpg);
+        background-size: cover;
+        background-position: center;
+        .banner-content{
+            max-width: 900px;
+            text-align: center;
+            h1{
+                color: $white;
+                font-size: 3em;
+                span{
+                    font-size: 1.3em;
+                    font-weight: 700;
+                    color: $green;
+                }
+            }
+            p{  
+                font-size: 1em;
+                color: $white;
+            }
+        }
+    }
+}

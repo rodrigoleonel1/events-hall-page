@@ -1,0 +1,30 @@
+/*Estilos Galeria*/
+main{
+    .title-galeria{
+        h1{
+            font-size: 1.5em;
+            span{
+                font-size: 1.3em;
+                font-weight: 700;
+                color: $green;
+            }
+        }
+    }
+    .galeria{
+        .box-img-galeria{
+            overflow: hidden;
+            border: 1px solid white;
+            cursor: pointer;
+            padding: 0px;
+            .img-galeria{
+                height: 35vh;
+                width: 100%;
+                object-fit: cover;
+                transition: all 0.5s ease;
+                &:hover{
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+/*Estilos Contacto*/
+main{
+    .title-formulario{
+        h1{
+            font-size: 1.5em;
+            span{
+                font-size: 1.3em;
+                font-weight: 700;
+                color: $green;
+            }
+        }
+    }
+    .formulario{
+        background: linear-gradient(
+            0deg,$black-opacity, $black-opacity),
+            url(../img/fondocontacto.jpg);
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        background-position: center;
+        .form-content{
+            @media (min-width: 1440px){
+                padding: 0px 40vh;
+            }
+        }
+        .form-control{
+            border: none;
+            border-radius: 0px;
+            border-bottom: 2px solid $green;
+            color: $white;
+            background-color: $white-opacity;
+            &:focus{
+                background-color: $black-opacity;
+            }
+        }
+        .form-select{
+            border: none;
+            border-radius: 0px;
+            border-bottom: 2px solid $green;
+            color: $white;
+            background-color: $white-opacity;
+            &:focus{
+                background-color: $black-opacity;
+            }
+        }
+        .btn{
+            background-color: $green;
+            color: $white;
+            border-radius: 0px;
+        }
+    }
+}

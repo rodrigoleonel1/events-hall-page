@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tiro+Telugu&display=swap");
+/*font-family: 'Tiro Telugu', serif;*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*Estilos generales*/
+a {
+  text-decoration: none;
+  color: #000000; }
+
+ul {
+  list-style: none;
+  padding-left: 0px; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth; }
+
+/*Estilos Header*/
+header {
+  background-color: #ffffff;
+  width: 100%; }
+  header .navbar {
+    padding: 0px; }
+    header .navbar .content-header .navbar-brand {
+      transition: all 0.5s ease-out; }
+      header .navbar .content-header .navbar-brand p {
+        font-weight: 700;
+        font-size: 1.5em;
+        margin-bottom: 0px; }
+      header .navbar .content-header .navbar-brand span {
+        color: #00897B; }
+      header .navbar .content-header .navbar-brand:hover {
+        opacity: 60%; }
+    @media (min-width: 1440px) {
+      header .navbar .content-header #navbarNav ul li {
+        position: relative; }
+        header .navbar .content-header #navbarNav ul li::before {
+          content: "";
+          height: 2px;
+          width: 0%;
+          background: #00897B;
+          position: absolute;
+          bottom: -4px;
+          transition: all 0.5s ease-out; }
+        header .navbar .content-header #navbarNav ul li:hover::before {
+          width: 100%; } }
+    header .navbar .content-header #navbarNav ul li a {
+      color: #000000;
+      padding: 0px auto; }
+      @media (min-width: 1440px) {
+        header .navbar .content-header #navbarNav ul li a {
+          transition: all 0.5s ease-out; }
+          header .navbar .content-header #navbarNav ul li a:hover {
+            letter-spacing: 1.5px;
+            color: #00897B; } }
+
+/*Estilos Footer*/
+footer {
+  background-color: #00897B;
+  width: 100%; }
+  footer .footer ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0; }
+    @media (min-width: 768px) {
+      footer .footer ul {
+        flex-direction: row; } }
+    footer .footer ul li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 7px 20px; }
+      footer .footer ul li .tw {
+        margin-left: -30px; }
+        @media (min-width: 768px) {
+          footer .footer ul li .tw {
+            margin: auto; } }
+    footer .footer ul a {
+      display: flex;
+      align-items: center;
+      transition: all 0.5s ease-out;
+      color: #ffffff; }
+      footer .footer ul a:hover {
+        color: #383838de;
+        letter-spacing: 1.5px; }
+      footer .footer ul a i {
+        padding-right: 5px; }
+
+/*Estilos Inicio*/
+main .banner {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/imagendeinicio.jpg);
+  background-size: cover;
+  background-position: center; }
+  main .banner .banner-content {
+    max-width: 900px;
+    text-align: center; }
+    main .banner .banner-content h1 {
+      color: #ffffff;
+      font-size: 3em; }
+      main .banner .banner-content h1 span {
+        font-size: 1.3em;
+        font-weight: 700;
+        color: #00897B; }
+    main .banner .banner-content p {
+      font-size: 1em;
+      color: #ffffff; }
+
+/*Estilos Servicios*/
+main .title-servicios {
+  margin-bottom: -10px; }
+  main .title-servicios h1 {
+    font-size: 1.5em; }
+    main .title-servicios h1 span {
+      font-size: 1.3em;
+      font-weight: 700;
+      color: #00897B; }
+
+main .servicios {
+  margin: 30px 0px; }
+  main .servicios .content-servicios {
+    display: flex;
+    flex-direction: row; }
+    main .servicios .content-servicios h2 {
+      font-size: 1.5em; }
+      main .servicios .content-servicios h2 span {
+        font-size: 1.3em;
+        font-weight: 700;
+        color: #00897B; }
+    main .servicios .content-servicios .content-img-servicios {
+      padding: 0px;
+      overflow: hidden; }
+      main .servicios .content-servicios .content-img-servicios .img-servicios {
+        object-fit: cover; }
+  @media (min-width: 1440px) {
+    main .servicios .mid {
+      flex-direction: row-reverse;
+      text-align: right; } }
+
+main .title-profesionales h2 {
+  font-size: 1.5em; }
+  main .title-profesionales h2 span {
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #00897B; }
+
+main .profesionales {
+  background-image: url(../img/fondoprofesionales.jpg);
+  background-position: center bottom; }
+  @media (min-width: 768px) {
+    main .profesionales {
+      background-position: center center; } }
+  main .profesionales .profesionales-card-box {
+    padding: 0px auto;
+    gap: 50px; }
+    main .profesionales .profesionales-card-box .profesionales-box-img {
+      position: relative;
+      cursor: pointer; }
+      main .profesionales .profesionales-card-box .profesionales-box-img img {
+        border: 1px solid #ffffff;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px; }
+      main .profesionales .profesionales-card-box .profesionales-box-img .img-description {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background: linear-gradient(0deg, #00897B, #ffffff33);
+        transition: all 0.5s ease;
+        opacity: 0;
+        visibility: hidden; }
+        main .profesionales .profesionales-card-box .profesionales-box-img .img-description ul {
+          margin-top: 110%; }
+          main .profesionales .profesionales-card-box .profesionales-box-img .img-description ul li {
+            font-size: 1.1em;
+            padding: 0px 20px;
+            text-align: center; }
+      main .profesionales .profesionales-card-box .profesionales-box-img:hover > .img-description {
+        opacity: 1;
+        visibility: visible; }
+    main .profesionales .profesionales-card-box .card-description h3 {
+      font-size: 1.4em;
+      margin-bottom: 0; }
+
+main .contador {
+  background: #00897bcc;
+  padding: 20px 0px;
+  font-size: 1.5em; }
+  @media (max-width: 1440px) {
+    main .contador {
+      display: none !important; } }
+  main .contador span {
+    color: #00897B; }
+  main .contador p {
+    margin-bottom: 0px; }
+
+main .title-opiniones h2 {
+  font-size: 1.5em; }
+  main .title-opiniones h2 span {
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #00897B; }
+
+main .opiniones .opiniones-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(0deg, #00897bcc, #ffffff);
+  padding: 30px 0px;
+  border-radius: 10px; }
+  main .opiniones .opiniones-box .opiniones-box-img {
+    margin: 10px; }
+    main .opiniones .opiniones-box .opiniones-box-img img {
+      border-radius: 200px;
+      width: 100px;
+      height: 100px;
+      object-fit: cover; }
+  main .opiniones .opiniones-box .opiniones-text {
+    padding: 0px 60px; }
+    main .opiniones .opiniones-box .opiniones-text h4 {
+      font-size: 1.1em; }
+
+/*Estilos Catering*/
+main .title-catering h1 {
+  font-size: 1.5em; }
+  main .title-catering h1 span {
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #00897B; }
+
+main .menu .menu-box-img {
+  overflow: hidden; }
+  @media (min-width: 768px) {
+    main .menu .menu-box-img .card-img-top {
+      transition: all 0.5s ease; }
+      main .menu .menu-box-img .card-img-top:hover {
+        transform: scale(1.1);
+        max-width: 100%; } }
+
+main .title-cocineros h2 {
+  font-size: 1.5em; }
+  main .title-cocineros h2 span {
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #00897B; }
+
+main .cocineros {
+  background-image: url(../img/fondococineros.jpg);
+  background-position: center bottom; }
+  @media (min-width: 768px) {
+    main .cocineros {
+      background-position: center center; } }
+  main .cocineros .cocinero-card-box {
+    padding: 0px auto;
+    gap: 50px; }
+    main .cocineros .cocinero-card-box .cocinero-box-img {
+      position: relative;
+      cursor: pointer; }
+      main .cocineros .cocinero-card-box .cocinero-box-img img {
+        border: 1px solid #ffffff;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px; }
+      main .cocineros .cocinero-card-box .cocinero-box-img .img-description {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        background: linear-gradient(0deg, #00897B, #ffffff33);
+        transition: all 0.5s ease;
+        opacity: 0;
+        visibility: hidden; }
+        main .cocineros .cocinero-card-box .cocinero-box-img .img-description ul {
+          margin-top: 110%; }
+          main .cocineros .cocinero-card-box .cocinero-box-img .img-description ul li {
+            font-size: 1.1em;
+            padding: 0px 20px;
+            text-align: center; }
+      main .cocineros .cocinero-card-box .cocinero-box-img:hover > .img-description {
+        opacity: 1;
+        visibility: visible; }
+    main .cocineros .cocinero-card-box .card-description h3 {
+      font-size: 1.4em;
+      margin-bottom: 0; }
+
+/*Estilos Galeria*/
+main .title-galeria h1 {
+  font-size: 1.5em; }
+  main .title-galeria h1 span {
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #00897B; }
+
+main .galeria .box-img-galeria {
+  overflow: hidden;
+  border: 1px solid white;
+  cursor: pointer;
+  padding: 0px; }
+  main .galeria .box-img-galeria .img-galeria {
+    height: 35vh;
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease; }
+    main .galeria .box-img-galeria .img-galeria:hover {
+      transform: scale(1.2); }
+
+/*Estilos Contacto*/
+main .title-formulario h1 {
+  font-size: 1.5em; }
+  main .title-formulario h1 span {
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #00897B; }
+
+main .formulario {
+  background: linear-gradient(0deg, #00000080, #00000080), url(../img/fondocontacto.jpg);
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center; }
+  @media (min-width: 1440px) {
+    main .formulario .form-content {
+      padding: 0px 40vh; } }
+  main .formulario .form-control {
+    border: none;
+    border-radius: 0px;
+    border-bottom: 2px solid #00897B;
+    color: #ffffff;
+    background-color: #ffffff33; }
+    main .formulario .form-control:focus {
+      background-color: #00000080; }
+  main .formulario .form-select {
+    border: none;
+    border-radius: 0px;
+    border-bottom: 2px solid #00897B;
+    color: #ffffff;
+    background-color: #ffffff33; }
+    main .formulario .form-select:focus {
+      background-color: #00000080; }
+  main .formulario .btn {
+    background-color: #00897B;
+    color: #ffffff;
+    border-radius: 0px; }
