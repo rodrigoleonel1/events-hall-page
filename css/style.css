@@ -182,7 +182,7 @@ main .profesionales {
         opacity: 0;
         visibility: hidden; }
         main .profesionales .profesionales-card-box .profesionales-box-img .img-description ul {
-          margin-top: 110%; }
+          margin-top: 100%; }
           main .profesionales .profesionales-card-box .profesionales-box-img .img-description ul li {
             font-size: 1.1em;
             padding: 0px 20px;
@@ -195,7 +195,7 @@ main .profesionales {
       margin-bottom: 0; }
 
 main .contador {
-  background: #00897bcc;
+  background: linear-gradient(to right, #00897bcc, #ffffff 15% 85%, #00897bcc);
   padding: 20px 0px;
   font-size: 1.5em; }
   @media (max-width: 1440px) {
@@ -241,15 +241,6 @@ main .title-catering h1 {
     font-weight: 700;
     color: #00897B; }
 
-main .menu .menu-box-img {
-  overflow: hidden; }
-  @media (min-width: 768px) {
-    main .menu .menu-box-img .card-img-top {
-      transition: all 0.5s ease; }
-      main .menu .menu-box-img .card-img-top:hover {
-        transform: scale(1.1);
-        max-width: 100%; } }
-
 main .title-cocineros h2 {
   font-size: 1.5em; }
   main .title-cocineros h2 span {
@@ -259,6 +250,7 @@ main .title-cocineros h2 {
 
 main .cocineros {
   background-image: url(../img/fondococineros.jpg);
+  background-size: cover;
   background-position: center bottom; }
   @media (min-width: 768px) {
     main .cocineros {
@@ -285,7 +277,7 @@ main .cocineros {
         opacity: 0;
         visibility: hidden; }
         main .cocineros .cocinero-card-box .cocinero-box-img .img-description ul {
-          margin-top: 110%; }
+          margin-top: 100%; }
           main .cocineros .cocinero-card-box .cocinero-box-img .img-description ul li {
             font-size: 1.1em;
             padding: 0px 20px;

@@ -80,7 +80,7 @@ main{
                     opacity: 0;
                     visibility: hidden;
                     ul{
-                        margin-top: 110%;
+                        margin-top: 100%;
                         li{
                             font-size: 1.1em;
                             padding: 0px 20px;
@@ -102,7 +102,7 @@ main{
         }
     } 
     .contador{
-        background: $green-opacity;
+        background: linear-gradient(to right, $green-opacity, $white 15% 85%, $green-opacity );
         padding: 20px 0px;
         font-size: 1.5em;
         @media (max-width: 1440px){

@@ -11,20 +11,6 @@ main{
             }
         }
     }
-    .menu{
-        .menu-box-img{
-            overflow: hidden;
-            .card-img-top{
-                @media (min-width: 768px){
-                    transition: all 0.5s ease;
-                    &:hover{
-                        transform: scale(1.1);
-                        max-width: 100%;
-                    }
-                }
-            }
-        }
-    }
     .title-cocineros{
         h2{
             font-size: 1.5em;
@@ -37,6 +23,7 @@ main{
     }
     .cocineros{
         background-image: url(../img/fondococineros.jpg);
+        background-size: cover;
         background-position: center bottom;
         @media (min-width: 768px){
             background-position: center center;
@@ -65,7 +52,7 @@ main{
                     opacity: 0;
                     visibility: hidden;
                     ul{
-                        margin-top: 110%;
+                        margin-top: 100%;
                         li{
                             font-size: 1.1em;
                             padding: 0px 20px;
