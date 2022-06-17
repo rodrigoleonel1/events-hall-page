@@ -2,12 +2,7 @@
 main{
     .title-galeria{
         h1{
-            font-size: 1.5em;
-            span{
-                font-size: 1.3em;
-                font-weight: 700;
-                color: $green;
-            }
+            @include span-letter-green;
         }
     }
     .galeria{

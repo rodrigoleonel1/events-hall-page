@@ -1,0 +1,101 @@
+/*Estilos Servicios*/
+
+main{
+    .title-servicios{
+        margin-bottom: -10px;
+        h1{
+            @include span-letter-green;
+        }
+    }
+    .servicios{
+        margin: 30px 0px;
+        .content-servicios{
+            display: flex;
+            flex-direction: row;
+            h2{
+                @include span-letter-green;
+            }
+            .content-img-servicios{
+                padding: 0px;
+                overflow: hidden;
+                .img-servicios{
+                    object-fit: cover;
+                }
+            }
+        }
+        .mid{
+            @include desktop-starts{
+                flex-direction: row-reverse;
+                text-align: right;
+            }
+        }
+    }
+    .title-profesionales{
+        h2{
+            @include span-letter-green;
+        }
+    }
+    .profesionales{
+        background-image: url(../img/fondo-de-escritorio.jpg);
+        @include background-cards;
+        .profesionales-card-box{
+            padding: 0px auto;
+            gap: 50px;
+            .profesionales-box-img{
+                @include cards;
+            }
+            .card-description{
+                h3{
+                    font-size: 1.4em;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    } 
+    .contador{
+        background: linear-gradient(to right, $green-opacity, $white 5% 95%, $green-opacity );
+        padding: 20px 0px;
+        font-size: 1.5em;
+        @media (min-width: 1700px){
+            background: linear-gradient(to right, $green-opacity, $white 15% 85%, $green-opacity );
+        }
+        span{
+            color: $green;
+        }
+        p{
+            margin-bottom: 0px;
+        }
+    }   
+    .title-opiniones{
+        h2{
+            @include span-letter-green;
+        }
+    }
+    .opiniones{
+        .opiniones-box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(
+                0deg, $green-opacity, $white );
+            padding: 30px 0px;
+            border-radius: 10px;
+            .opiniones-box-img{
+                margin: 10px;
+                img{
+                    border-radius: 200px; 
+                    width: 100px;
+                    height: 100px;
+                    object-fit: cover;
+                }
+            }
+            .opiniones-text{
+                padding: 0px 60px;
+                h4{
+                    font-size: 1.1em;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+@mixin span-letter-green{
+    font-size: 1.5em;
+    span{
+        font-size: 1.3em;
+        font-weight: 700;
+        color: $green;
+    }
+}
+
+@mixin cards {
+    position: relative;
+    cursor: pointer;
+    img{
+        border: 1px solid $white;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .img-description{
+        position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            background: linear-gradient(
+                0deg, $green, $white-opacity );
+            transition: all 0.5s ease;
+            opacity: 0;
+            visibility: hidden;
+            ul{
+                margin-top: 100%;
+                li{
+                    font-size: 1.1em;
+                    padding: 0px 20px;
+                    text-align: center;
+                }
+            }
+        }
+    &:hover > .img-description{
+         opacity: 1;
+        visibility: visible;
+    }
+}
+
+@mixin background-cards {
+    background-position: center bottom;
+    @media (min-width: 768px){
+        background-position: center center;
+    }
+}
+
+@mixin tablet-starts {
+    @media (min-width: 768px){ @content; }
+}
+
+@mixin desktop-starts {
+    @media (min-width: 1440px){ @content; }
+}
+
+

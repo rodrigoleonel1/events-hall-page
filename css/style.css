@@ -76,21 +76,26 @@ footer {
       justify-content: space-between;
       align-items: center;
       padding: 7px 20px; }
-      footer .footer ul li .tw {
+      footer .footer ul li .btn--instagram:hover {
+        color: #8f21a8; }
+      footer .footer ul li .btn--whatsapp:hover {
+        color: #25d366; }
+      footer .footer ul li .btn--twitter:hover {
+        color: #00acee; }
+      footer .footer ul li a {
+        display: flex;
+        align-items: center;
+        transition: all 0.5s ease-out;
+        color: #ffffff; }
+        footer .footer ul li a:hover {
+          letter-spacing: 1.5px; }
+        footer .footer ul li a i {
+          padding-right: 5px; }
+      footer .footer ul li .btn--twitter {
         margin-left: -30px; }
         @media (min-width: 768px) {
-          footer .footer ul li .tw {
+          footer .footer ul li .btn--twitter {
             margin: auto; } }
-    footer .footer ul a {
-      display: flex;
-      align-items: center;
-      transition: all 0.5s ease-out;
-      color: #ffffff; }
-      footer .footer ul a:hover {
-        color: #383838de;
-        letter-spacing: 1.5px; }
-      footer .footer ul a i {
-        padding-right: 5px; }
 
 /*Estilos Inicio*/
 main .banner {
@@ -99,7 +104,7 @@ main .banner {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/imagendeinicio.jpg);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/radiante-eventos-banner.jpg);
   background-size: cover;
   background-position: center; }
   main .banner .banner-content {
@@ -155,7 +160,7 @@ main .title-profesionales h2 {
     color: #00897B; }
 
 main .profesionales {
-  background-image: url(../img/fondoprofesionales.jpg);
+  background-image: url(../img/fondo-de-escritorio.jpg);
   background-position: center bottom; }
   @media (min-width: 768px) {
     main .profesionales {
@@ -195,12 +200,12 @@ main .profesionales {
       margin-bottom: 0; }
 
 main .contador {
-  background: linear-gradient(to right, #00897bcc, #ffffff 15% 85%, #00897bcc);
+  background: linear-gradient(to right, #00897bcc, #ffffff 5% 95%, #00897bcc);
   padding: 20px 0px;
   font-size: 1.5em; }
-  @media (max-width: 1440px) {
+  @media (min-width: 1700px) {
     main .contador {
-      display: none !important; } }
+      background: linear-gradient(to right, #00897bcc, #ffffff 15% 85%, #00897bcc); } }
   main .contador span {
     color: #00897B; }
   main .contador p {
@@ -249,8 +254,7 @@ main .title-cocineros h2 {
     color: #00897B; }
 
 main .cocineros {
-  background-image: url(../img/fondococineros.jpg);
-  background-size: cover;
+  background-image: url(../img/fondo-de-cocina.jpg);
   background-position: center bottom; }
   @media (min-width: 768px) {
     main .cocineros {
@@ -263,15 +267,15 @@ main .cocineros {
       cursor: pointer; }
       main .cocineros .cocinero-card-box .cocinero-box-img img {
         border: 1px solid #ffffff;
-        border-top-right-radius: 20px;
-        border-bottom-left-radius: 20px; }
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px; }
       main .cocineros .cocinero-card-box .cocinero-box-img .img-description {
         position: absolute;
         top: 0;
         width: 100%;
         height: 100%;
-        border-top-right-radius: 20px;
-        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
         background: linear-gradient(0deg, #00897B, #ffffff33);
         transition: all 0.5s ease;
         opacity: 0;
@@ -319,7 +323,7 @@ main .title-formulario h1 {
     color: #00897B; }
 
 main .formulario {
-  background: linear-gradient(0deg, #00000080, #00000080), url(../img/fondocontacto.jpg);
+  background: linear-gradient(0deg, #00000080, #00000080), url(../img/radiante-eventos-aire-libre.jpg);
   width: 100%;
   height: auto;
   background-size: cover;

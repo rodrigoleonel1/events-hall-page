@@ -2,24 +2,19 @@
 main{
     .title-formulario{
         h1{
-            font-size: 1.5em;
-            span{
-                font-size: 1.3em;
-                font-weight: 700;
-                color: $green;
-            }
+            @include span-letter-green;
         }
     }
     .formulario{
         background: linear-gradient(
             0deg,$black-opacity, $black-opacity),
-            url(../img/fondocontacto.jpg);
+            url(../img/radiante-eventos-aire-libre.jpg);
         width: 100%;
         height: auto;
         background-size: cover;
         background-position: center;
         .form-content{
-            @media (min-width: 1440px){
+            @include desktop-starts{
                 padding: 0px 40vh;
             }
         }

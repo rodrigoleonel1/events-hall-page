@@ -1,0 +1,31 @@
+/*Estilos Catering*/
+
+main{
+    .title-catering{
+        h1{
+            @include span-letter-green;
+        }
+    }
+    .title-cocineros{
+        h2{
+            @include span-letter-green;
+        }
+    }
+    .cocineros{
+        background-image: url(../img/fondo-de-cocina.jpg);
+        @include background-cards;
+        .cocinero-card-box{
+            padding: 0px auto;
+            gap: 50px;
+            .cocinero-box-img{
+                @include cards;
+            }
+            .card-description{
+                h3{
+                    font-size: 1.4em;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

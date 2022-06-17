@@ -23,7 +23,7 @@ header{
             #navbarNav{
                 ul{
                     li{
-                        @media (min-width: 1440px){
+                        @include desktop-starts{
                             position: relative;
                             &::before{
                                 content: "";
@@ -41,7 +41,7 @@ header{
                         a{
                             color: $black;
                             padding: 0px auto;
-                            @media (min-width: 1440px){
+                            @include desktop-starts{
                                 transition: all 0.5s ease-out;
                                 &:hover{
                                     letter-spacing: 1.5px;

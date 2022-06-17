@@ -10,7 +10,7 @@ footer{
             justify-content: center;
             align-items: center;
             margin: 0;
-            @media (min-width: 768px){
+            @include tablet-starts{
                 flex-direction: row;
             }
             li{
@@ -18,24 +18,28 @@ footer{
                 justify-content: space-between;
                 align-items: center;
                 padding: 7px 20px;
-                .tw{
+                @each $red, $color in $redes{
+                    .btn--#{$red}:hover{
+                        color: $color;
+                    }     
+                }
+                a{
+                    display: flex;
+                    align-items: center;
+                    transition: all 0.5s ease-out;
+                    color: $white;
+                    &:hover{
+                        letter-spacing: 1.5px;
+                    }
+                    i{
+                        padding-right: 5px;
+                    }
+                }    
+                .btn--twitter{
                     margin-left: -30px;
-                    @media (min-width: 768px){
+                    @include tablet-starts{
                         margin: auto;
                     }
-                }
-            }
-            a{
-                display: flex;
-                align-items: center;
-                transition: all 0.5s ease-out;
-                color: $white;
-                &:hover{
-                    color: $grey;
-                    letter-spacing: 1.5px;
-                }
-                i{
-                    padding-right: 5px;
                 }
             }
         }

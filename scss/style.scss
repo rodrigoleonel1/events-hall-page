@@ -3,14 +3,15 @@
 
 //Imports
 @import "./utilities/variables";
+@import "./utilities/mixin";
 @import "./base/normalize";
 @import "./layout/header";
 @import "./layout/footer";
 @import "./layout/index";
-@import "servicios";
-@import "catering";
-@import "galeria";
-@import "contacto";
+@import "./layout/servicios";
+@import "./layout/catering";
+@import "./layout/galeria";
+@import "./layout/contacto";
 
 
 
