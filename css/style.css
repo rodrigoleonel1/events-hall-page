@@ -323,31 +323,31 @@ main .title-formulario h1 {
     color: #00897B; }
 
 main .formulario {
-  background: linear-gradient(0deg, #00000080, #00000080), url(../img/radiante-eventos-aire-libre.jpg);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/radiante-eventos-aire-libre.jpg);
   width: 100%;
   height: auto;
   background-size: cover;
-  background-position: center; }
+  background-position: center top; }
   @media (min-width: 1440px) {
     main .formulario .form-content {
       padding: 0px 40vh; } }
-  main .formulario .form-control {
+  main .formulario .form-content .form-control {
     border: none;
     border-radius: 0px;
     border-bottom: 2px solid #00897B;
     color: #ffffff;
     background-color: #ffffff33; }
-    main .formulario .form-control:focus {
+    main .formulario .form-content .form-control:focus {
       background-color: #00000080; }
-  main .formulario .form-select {
+  main .formulario .form-content .form-select {
     border: none;
     border-radius: 0px;
     border-bottom: 2px solid #00897B;
     color: #ffffff;
     background-color: #ffffff33; }
-    main .formulario .form-select:focus {
+    main .formulario .form-content .form-select:focus {
       background-color: #00000080; }
-  main .formulario .btn {
+  main .formulario .form-content .btn {
     background-color: #00897B;
     color: #ffffff;
     border-radius: 0px; }
